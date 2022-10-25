@@ -1,0 +1,62 @@
+@import 'styles/_variables';
+
+.title {
+  margin-bottom: 4px;
+}
+
+.selectWrap {
+  position: relative;
+}
+
+.select {
+  position: absolute;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding: 10px 0 10px 17px;
+  background-color: $white;
+  border: $border;
+  border-radius: $border-radius;
+
+  &_select {
+    background-color: $white;
+    box-shadow: 0 4px 8px 0 $color-shadow2;
+    border: solid 1px $color-button;
+  }
+
+  &:focus-within {
+    box-shadow: 0 4px 8px 0 $color-shadow2;
+    border: solid 1px $color-button;
+    outline: none;
+  }
+}
+
+.wrapControlButton {
+  display: flex;
+  align-items: center;
+}
+
+.placeholder {
+  width: 100%;
+  margin-right: 13px;
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(83, 98, 131, 0.5);
+
+  &_select {
+    text-transform: capitalize;
+    color: $color-text;
+  }
+}
+
+.visually_hidden,
+.visually_hidden:not(:focus):not(:active) {
+  @extend %visually_hidden;
+}

@@ -1,0 +1,20 @@
+@import 'styles/_variables';
+
+.placeholder {
+  width: calc(100% - 1px);
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(83, 98, 131, 0.5);
+
+  &_select {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: $color-text;
+  }
+
+  &_uppercase {
+    text-transform: uppercase;
+  }
+}

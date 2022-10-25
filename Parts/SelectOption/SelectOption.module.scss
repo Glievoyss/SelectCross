@@ -1,0 +1,63 @@
+@import 'styles/_variables';
+
+.optionWrap {
+  display: flex;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0 16px 0 0;
+  align-items: center;
+  cursor: pointer;
+
+  &_select {
+    background-color: $color-text-background;
+  }
+}
+
+.label {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  white-space: nowrap;
+  color: $color-text;
+
+  &_noMulti {
+    margin-left: 16px;
+  }
+
+  &_uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.checkBox {
+  display: flex;
+  box-sizing: border-box;
+  min-width: 16px;
+  height: 16px;
+  margin: 0 11px 0 16px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  border: $border;
+  border-radius: 2px;
+
+  &_selected {
+    border: solid 1px $color-button;
+  }
+
+  &_hide {
+    display: none;
+  }
+}
+
+.arrow {
+  width: 3px;
+  height: 7px;
+  border-right: 1px solid $color-button;
+  border-bottom: 1px solid $color-button;
+  transform: rotate(40deg) translate(-0.5px, -0.5px);
+}
